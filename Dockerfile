@@ -2,7 +2,7 @@
 #
 # Version 1.8
 
-FROM ubuntu:20.04
+FROM ubuntu:24.04.1
 MAINTAINER MarkusMcNugen
 
 VOLUME /downloads
@@ -16,7 +16,7 @@ RUN usermod -u 99 nobody
 RUN apt-get update && \
     apt-get install -y --no-install-recommends apt-utils openssl && \
     apt-get install -y software-properties-common && \
-    add-apt-repository ppa:qbittorrent-team/qbittorrent-stable && \
+    add-apt-repository ppa:qbittorrent-team/qbittorrent-unstable && \
     apt-get update && \
     apt-get install -y iputils-ping jq traceroute qbittorrent-nox openvpn curl moreutils net-tools dos2unix kmod iptables ipcalc unrar binutils && \
     apt-get clean && \
