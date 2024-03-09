@@ -2,7 +2,7 @@
 #
 # Version 1.8
 
-FROM ubuntu:24.04.1
+FROM ubuntu:24.04
 MAINTAINER MarkusMcNugen
 
 VOLUME /downloads
