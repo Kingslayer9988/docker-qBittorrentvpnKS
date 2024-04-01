@@ -43,7 +43,7 @@ $ docker run --privileged  -d \
               -p 8080:8080 \
               -p 8999:8999 \
               -p 8999:8999/udp \
-              chrisjohnson00/qbittorrent-openvpn
+              kingslayer99/qbittorrentvpn
 ```
 
 # Variables, Volumes, and Ports
